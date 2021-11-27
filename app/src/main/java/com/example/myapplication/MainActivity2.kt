@@ -14,10 +14,11 @@ class MainActivity2 : AppCompatActivity() {
     private lateinit var meil:EditText
     private lateinit var password:EditText
     private lateinit var login: Button
+    var name = "giorgi"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
-        findViewById<TextView>(R.id.editText6).text = intent?.extras?.getString("მომხმარებლის სახელი","")
+        findViewById<TextView>(R.id.gio5).text = intent?.extras?.getString("მომხმარებლის სახელი","gamarjoba $name")
         meil = findViewById(R.id.gio4)
         password = findViewById(R.id.gio2)
         login = findViewById(R.id.gio3)
