@@ -10,6 +10,7 @@ import android.widget.TextView
 class MainActivity : AppCompatActivity() {
     private lateinit var editText3: EditText
     private lateinit var button: Button
+    var name = "გიორგი"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +22,12 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             val ragaca3 =editText3.text.toString()
             val intent = Intent(this,MainActivity2:: class.java)
-            intent.putExtra("მომხმარებლის სახელი",ragaca3)
+            if (ragaca3.isEmpty()){
+                intent.putExtra("მომხმარებლის სახელი"," $name")
+            }
+            else{
+                intent.putExtra("მომხმარებლის სახელი", ragaca3)
+            }
 
 
             startActivity(intent)

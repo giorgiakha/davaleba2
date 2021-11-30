@@ -18,7 +18,7 @@ class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
-        findViewById<TextView>(R.id.gio5).text = intent?.extras?.getString("მომხმარებლის სახელი","gamarjoba $name")
+        findViewById<TextView>(R.id.editText6).text = intent?.extras?.getString("მომხმარებლის სახელი"," $name")
         meil = findViewById(R.id.gio4)
         password = findViewById(R.id.gio2)
         login = findViewById(R.id.gio3)

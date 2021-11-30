@@ -8,27 +8,28 @@
     tools:context=".MainActivity2">
 
     <TextView
-        android:layout_width="wrap_content"
         android:id="@+id/gio5"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:text="გამარჯობა"
+        android:layout_marginTop="88dp"
+        android:text="გამარჯობა "
         android:textColor="@color/white"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editText6"
-        android:layout_width="254dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="156dp"
+        android:layout_width="228dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="72dp"
         android:text="მომხმარებლის სახელი"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,13 +37,14 @@
         android:id="@+id/gio4"
         android:layout_width="282dp"
         android:layout_height="88dp"
-        android:layout_marginTop="8dp"
         android:hint="მეილი"
         android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.427" />
 
     <EditText
         android:id="@+id/gio2"
